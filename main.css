@@ -1,3 +1,129 @@
-startP {
-    color: blue
+* {
+    padding: 5px;
+    border: 5px;
+    margin: 0px;
+    font-family: 'Fira Sans', sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    * {
+      background-color: lightblue;
+    }
+  }
+
+body {
+    background-color: #F0ECEE;
+}
+a {
+    font-style: none;
+    text-decoration: none;
+    color: inherit;
+
+}
+
+nav ul {
+    display: flex;
+    padding: 10px;
+    border: 0px;
+    color: #88898B;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    font-style: none;
+    font-size: 25px;
+    float: left;
+    display: block;
+    padding: 8px;
+    font-weight: 400;
+    border: 8px;
+    background-color: #F0ECEE;
+   
+} 
+
+li.AdoptMe {
+    font-size: 25px;
+    flex: 6;
+    color: black;
+
+}
+
+.buzzword {
+    color: #FF4850;
+}
+
+
+li a:hover {
+    color: #FF4850;
+}
+button.popbutton {
+    margin-top: 20px;
+    font-size: 15px;
+    height: 10%;
+    width: 30%;
+    padding: 10px;
+}
+.popbutton {
+    background-color: #FF4850;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    width: auto;
+}
+.popbutton a:hover {
+    color: #CCC;
+}
+.largeheading {
+    margin-top: 80px;
+    margin-right: 80px;
+    font-size: 40px;
+
+
+}
+.subtext {
+    margin-top: 40px;
+    margin-right: 100px;
+    background-color: #F0ECEE;
+    color: grey;
+    font-size: 20px;
+
+}
+
+.secondbody {
+    background-image: url(/bulldog.jpg);
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height: 500px;
+}
+
+
+.content {
+    padding: 1px;
+    width: 50%;
+    height: 120%;
+    flex: 1;
+    order: 1;
+
+}
+
+.puppic {
+    flex: 1;
+    order: 2;
+    border-color: red;
+    background-size: 1300px;
+    background-image: url(images/bulldog.jpg);
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    max-width: 50%;
+    height: 600px;
+
+}
+
+
+
+
+
+
