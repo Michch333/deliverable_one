@@ -5,11 +5,6 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-    * {
-      background-color: lightblue;
-    }
-  }
 
 body {
     background-color: #F0ECEE;
@@ -113,7 +108,7 @@ button.popbutton {
     order: 2;
     border-color: red;
     background-size: 1300px;
-    background-image: url(images/bulldog.jpg);
+    background-image: url(/bulldog.jpg);
     background-position-x: 100%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -122,7 +117,11 @@ button.popbutton {
 
 }
 
-
+@media only screen and (max-width: 600px) {
+    * {
+      background-color: lightblue;
+    }
+  }
 
 
 
