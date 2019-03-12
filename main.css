@@ -34,8 +34,8 @@ nav ul li {
     font-weight: 400;
     border: 8px;
     background-color: #F0ECEE;
-   
-} 
+
+}
 
 li.AdoptMe {
     font-size: 25px;
@@ -56,9 +56,28 @@ button.popbutton {
     margin-top: 20px;
     font-size: 15px;
     height: 10%;
-    width: 30%;
+    width: auto;
+    max-height: 3rem;
     padding: 10px;
 }
+li.ContactUs {
+    display: block;
+    background-color: #FF4850;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: auto;
+
+}
+li.ContactUs:hover{
+    background-color: #CCC;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+
 .popbutton {
     background-color: #FF4850;
     padding: 10px;
@@ -66,8 +85,9 @@ button.popbutton {
     color: white;
     width: auto;
 }
-.popbutton a:hover {
-    color: #CCC;
+.popbutton:hover {
+    background-color: #CCC;
+    color: black;
 }
 .largeheading {
     margin-top: 80px;
@@ -82,15 +102,13 @@ button.popbutton {
     background-color: #F0ECEE;
     color: grey;
     font-size: 20px;
-
 }
 
 .secondbody {
-    background-image: url(/bulldog.jpg);
     display: flex;
     flex-direction: row;
     padding: 10px;
-    height: 500px;
+    height: 100vh;
 }
 
 
@@ -98,30 +116,130 @@ button.popbutton {
     padding: 1px;
     width: 50%;
     height: 120%;
-    flex: 1;
-    order: 1;
-
 }
 
 .puppic {
-    flex: 1;
-    order: 2;
-    border-color: red;
-    background-size: 1300px;
-    background-image: url(/bulldog.jpg);
+
+    background: lightblue url("./bulldog.jpg") no-repeat center;
+    background-size: cover;
     background-position-x: 100%;
     background-position-y: 50%;
-    background-repeat: no-repeat;
-    max-width: 50%;
-    height: 600px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
 
 }
 
 @media only screen and (max-width: 600px) {
     * {
-      background-color: lightblue;
+      background-color: #F0ECEE;
+      all: unset;
+      height: 1vh;
+      font-family: 'Fira Sans', sans-serif;
+    } 
+
+    .puppic {
+    background: #F0ECEE;
     }
-  }
+
+
+    a {
+        font-style: none;
+        text-decoration: none;
+        color: inherit;
+
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+    nav ul li {
+        /* all: initial; */
+        text-align: left;
+        flex: 1;
+        width: 100%;
+        margin: 10px;
+        border-color: red;
+        list-style-type: none;
+        font-style: none;
+        font-size: 15px;
+        float: left;
+        padding: 8px;
+        font-weight: 400;
+        border: 8px;
+        background-color: #F0ECEE;
+        
+    }
+
+    li.AdoptMe {
+        /* all: initial; */
+        font-size: 25px;
+        flex: 2;
+        color: black;
+    }
+
+    li.popbutton {
+        /* all: initial; */
+        font-size: 25px;
+        flex: 2;
+        color: black;
+    }
+
+    .buzzword {
+        all: initial;
+    }
+
+
+    li a:hover {
+        all: initial;
+    }
+    button.popbutton {
+        all: initial;
+    }
+    /* li.ContactUs {
+        all: initial;
+    } */
+    li.ContactUs:hover{
+        all: initial;
+    }
+
+
+    .popbutton {
+        all: initial;
+    
+    }
+    .popbutton:hover {
+        all: initial;
+
+    }
+    .largeheading {
+        all: initial;
+    }
+    .subtext {
+        all: initial;
+    }
+
+    .secondbody {
+        all: initial;
+    }
+
+
+    .content {
+        all: initial;
+    }
+
+    .puppic {
+        all: initial;
+    }
+
+}
 
 
 
