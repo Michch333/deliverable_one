@@ -130,13 +130,16 @@ li.ContactUs:hover{
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     * {
-      background-color: #F0ECEE;
-      all: unset;
-      height: 1vh;
       font-family: 'Fira Sans', sans-serif;
     } 
+
+    body {
+       width: 100% !important;
+       height: 100% !important;
+
+    }
 
     .puppic {
     background: #F0ECEE;
@@ -150,6 +153,7 @@ li.ContactUs:hover{
 
     }
 
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -161,82 +165,99 @@ li.ContactUs:hover{
 
     }
     nav ul li {
-        /* all: initial; */
         text-align: left;
-        flex: 1;
+        flex: 2;
         width: 100%;
-        margin: 10px;
+        margin: 0px;
         border-color: red;
         list-style-type: none;
         font-style: none;
-        font-size: 15px;
+        font-size: 24px;
         float: left;
-        padding: 8px;
+        padding: 2px;
         font-weight: 400;
-        border: 8px;
+        border: 0px;
         background-color: #F0ECEE;
         
     }
 
+
     li.AdoptMe {
-        /* all: initial; */
+        all: initial;
         font-size: 25px;
         flex: 2;
         color: black;
     }
 
     li.popbutton {
-        /* all: initial; */
-        font-size: 25px;
+        font-size: 26px;
+        height: 80%;
+        color: white;
+        background-color: #FF4850;
+        text-align: center;
         flex: 2;
-        color: black;
+        padding: 0;
     }
 
     .buzzword {
-        all: initial;
+        color: #FF4850;
+
     }
+
 
 
     li a:hover {
-        all: initial;
+        color: #FF4850;
     }
+
+    #ContactUs a:hover {
+        color: #FF4850 !important;
+    }
+
     button.popbutton {
-        all: initial;
-    }
-    /* li.ContactUs {
-        all: initial;
-    } */
-    li.ContactUs:hover{
-        all: initial;
-    }
-
-
-    .popbutton {
-        all: initial;
+        width: 100%;
     
     }
-    .popbutton:hover {
-        all: initial;
+    li.ContactUs:hover{
+        color: #FF4850;
+        background-color: #CCC;
+        padding: 0;
+    }
 
+    .popbutton:hover {
+        color: #FF4850;
+        background-color: #CCC;
     }
     .largeheading {
-        all: initial;
+        margin: 0;
+      font-size: 40px;  
+      color: black;
     }
     .subtext {
-        all: initial;
+        color: grey;
+        background-color: #F0ECEE;
     }
 
     .secondbody {
-        all: initial;
+        height: 100%;
+        width: 100%;
     }
 
 
     .content {
-        all: initial;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 50px;
+        width: 100%;
+        height: 100%;
+        color: red;
     }
 
     .puppic {
-        all: initial;
+        size: 0px;
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+        border: 0px;
     }
 
 }
